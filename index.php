@@ -11,19 +11,17 @@
 </head>
 
 <body>
-        <?php include(D_TEMPLATE.'/navigation.php'); //main navigation ?>
     
-    	<div class="container">
-    		<h1><?php echo $page['header']; ?></h1>
-    		<?php echo $page['body_formatted']; ?>
-    	</div>
-	
-        <?php include(D_TEMPLATE.'/footer.php'); //page footer ?>
+    <?php include(D_TEMPLATE.'/navigation.php'); //main navigation ?>
+
+	<div class="container">
+		<h1><?php echo $page['header']; ?></h1>
+		<?php echo $page['body_formatted']; ?>
+	</div>
+
+    <?php include(D_TEMPLATE.'/footer.php'); //page footer ?>
     
-    
-    <div id="console-debug">
-        <pre><?php print_r($page); ?></pre>
-    </div> 
+    <?php if($debug == 1) { include ('widgets/debug.php'); } ?>
 	
 </body>
 

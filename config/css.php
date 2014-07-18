@@ -39,9 +39,11 @@
             top: 50px;
             left:0px;
             width:30%;
-            height:700px;
+            height:90%;
             overflow-y:scroll;
             background-color: #FFFFFF;
             box-shadow: 2px 2px 5px #CCCCCC;
+        }
+        #console-debug pre {
         }
 </style>
