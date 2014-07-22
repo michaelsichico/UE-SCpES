@@ -32,8 +32,8 @@
 		  background-color: #f5f5f5;
 		}
 		#btn-debug {
-		    position: absolute;
-		    right: 0;
+		    /*position: absolute;
+		    right: 0; */
 		}
     	#console-debug {
             position: absolute;
@@ -46,5 +46,8 @@
             box-shadow: 2px 2px 5px #CCCCCC;
         }
         #console-debug pre {
+        }
+        .login {
+            width: 500px;
         }
 </style>

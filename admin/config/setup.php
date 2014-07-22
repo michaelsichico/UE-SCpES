@@ -1,8 +1,8 @@
 <?php
 //setup file:
 
-//database connection here ...
-$dbc = mysqli_connect('localhost','username','password','scpes') OR die('Could not connect because: '.mysqli_connect_error());
+//database connection
+include ('../config/connection.php');
 
 //constants
 DEFINE('D_TEMPLATE', 'template');
@@ -22,5 +22,7 @@ else 						{$pageid = 1;}				//set $pageid equal to 1 or home page
 //page setup
 $page = data_page($dbc,$pageid);
 
+//user setup
+$user = data_user($dbc, $_SESSION['username']);
 
 ?>

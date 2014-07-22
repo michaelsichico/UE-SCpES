@@ -1,3 +1,14 @@
+<?php
+
+//start the session
+session_start();
+
+if(!isset($_SESSION['username'])){
+    header('location: login.php');
+}
+
+?>
+
 <?php include('config/setup.php'); ?>
 
 <!DOCTYPE html>
@@ -14,7 +25,9 @@
     
     <?php include(D_TEMPLATE.'/navigation.php'); //main navigation ?>
 
-    <h1>Admin Dashboard</h1>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+    </div>
 
     <?php include(D_TEMPLATE.'/footer.php'); //page footer ?>
     
